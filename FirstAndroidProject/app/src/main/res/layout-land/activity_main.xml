@@ -15,9 +15,27 @@
         android:text="@string/button_enter_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
         android:id="@+id/button"
-        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:textColor="#ffFFFF"
+
+        android:background="@drawable/border_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_below="@+id/lb_welcome"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bg1"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription=""
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,10 +43,14 @@
         android:text="@string/welcome_label"
         android:textSize="36sp"
         android:textAlignment="center"
+        android:layout_marginTop="42dp"
         android:id="@+id/lb_welcome"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/background_light"
+        android:layout_marginRight="192dp"
+        android:layout_marginEnd="192dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:textStyle="normal|bold" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
